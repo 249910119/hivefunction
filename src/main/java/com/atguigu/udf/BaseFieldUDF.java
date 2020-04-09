@@ -34,6 +34,7 @@ public class BaseFieldUDF extends UDF {
             for (int i = 0; i < jsonkeys.length; i++) {
                 String fieldName = jsonkeys[i].trim();
 
+                //拼接字符串
                 if (base.has(fieldName)){
                     sb.append(base.getString(fieldName)).append("\t");
                 } else {
